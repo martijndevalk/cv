@@ -47,10 +47,15 @@ export default {
   &__subheading {
     margin: 0 0 1rem;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.8rem;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 1rem;
+    }
   }
 
   &__employed {
+    margin: 0;
     font-size: 0.8rem;
     color: var(--medium-gray);
   }

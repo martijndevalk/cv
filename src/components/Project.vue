@@ -15,7 +15,7 @@
         <h6 class="project__preheading">Project details</h6>
         <ul class="project__overview-list">
           <li><strong>CMS:</strong> {{ project.cms }}</li>
-          <li><strong>Methodology:</strong> {{ project.methodology }}</li>
+          <li><strong>Agile framework:</strong> {{ project.framework }}</li>
           <li><strong>My role:</strong> {{ project.role }}</li>
         </ul>
 
@@ -67,11 +67,15 @@ export default {
 
 <style lang="scss" scoped>
 .project {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
   padding: 2rem;
   background-color: var(--white);
   box-shadow: 0 0 20px rgba(0,0,0, 0.2);
-  width: calc(100% - 20px);
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 0 3rem;
+    width: calc(100% - 20px);
+  }
 
   &__hg {
     font-family: var(--secondary-font);
@@ -80,9 +84,13 @@ export default {
   &__heading {
     margin: 0 0 0.2rem;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     display: inline-block;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__subheading {
@@ -100,10 +108,6 @@ export default {
     }
   }
 
-  &__intro {
-
-  }
-
   &__more-info {
     padding: 1rem 1rem 0;
     display: flex;
@@ -113,6 +117,7 @@ export default {
 
     svg {
       width: 20px;
+      height: 20px;
       pointer-events: none;
     }
   }
@@ -120,9 +125,12 @@ export default {
   &__preheading {
     margin: 0 0 0.2rem;
     font-weight: 700;
-    font-size: 1rem;
-    // text-transform: uppercase;
+    font-size: 0.8rem;
     display: inline-block;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 1rem;
+    }
   }
 
   &__detail {

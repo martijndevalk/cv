@@ -3,7 +3,7 @@
 
     <header class="site-header">
       <h1 class="site-header__heading">Martijn de Valk</h1>
-      <h1 class="site-header__subheading">Creative Front-end Developer</h1>
+      <h2 class="site-header__subheading">Creative Front-end Developer</h2>
     </header>
 
     <aside class="sidebar">
@@ -58,9 +58,26 @@ export default {
 <style lang="scss" scoped>
 .grid {
   display: grid;
-  grid-template-columns: minmax(200px, 300px) repeat(2, minmax(200px, 300px)) 100px minmax(500px, 600px) minmax(50px, 100px);
-  grid-template-rows: 100px minmax(300px, calc(100vh - 200px)) 100px;
-  height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto, 20px);
+}
+
+@media screen and (min-width: 1280px) {
+  .grid {
+    height: 100vh;
+
+    grid-template-columns:
+      minmax(250px, 300px)
+      repeat(2, minmax(200px, 300px))
+      minmax(50px, 100px)
+      minmax(500px, 600px)
+      minmax(50px, 100px);
+
+    grid-template-rows:
+      100px
+      minmax(300px, calc(100vh - 200px))
+      100px;
+  }
 }
 
 .bg {
@@ -68,22 +85,36 @@ export default {
   grid-row: 1 / span 3;
   z-index: -1;
   opacity: 0.1;
+  overflow: hidden;
+
   svg {
-    color: var(--desire);
+    color: var(--space-cadet);
     width: 100%;
     transform: scaleX(-1);
     object-fit: cover;
   }
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .site-header {
-  padding: 0 0 0 2rem;
+  padding: 1rem var(--gutter);
   grid-column: 1 / span 2;
   grid-row: 1;
   z-index: 1;
   align-self: center;
   color: var(--white);
   font-family: var(--primary-font);
+
+  @media screen and (max-width: 1279px) {
+    box-shadow: 0 0 20px rgba(0,0,0, 0.6);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 0 0 2rem;
+  }
 
   &__heading {
     margin: 0 0 0.2rem;
@@ -104,12 +135,22 @@ export default {
 }
 
 .sidebar {
-  background: linear-gradient(to right, var(--desire) 0%, var(--desireDark) 100%);
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 3;
+  grid-column: 1;
+  background: var(--space-cadet-dark);
 
-  display: grid;
-  grid-template-rows: 100px 1fr 100px;
+  @media screen and (max-width: 1279px) {
+    padding: 2rem calc(var(--gutter) + 2rem);
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    background: linear-gradient(to right, var(--space-cadet) 0%, var(--space-cadet-dark) 100%);
+  }
 }
 
 </style>

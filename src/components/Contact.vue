@@ -33,9 +33,11 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
-  padding: 0 4rem;
-  grid-row: 2;
-  align-self: end;
+  @media screen and (min-width: 1280px) {
+    padding: 0 4rem;
+    grid-row: 2;
+    align-self: end;
+  }
 
   &__item {
     font-family: var(--primary-font);

@@ -3,14 +3,23 @@
     <div class="intro__container">
       <div class="intro__inner">
         <hgroup class="intro__hg">
-          <h1 class="intro__hg__heading">Hey! Let me introduce myself</h1>
-          <!-- <h2 class="intro__hg__subheading">Creative front-end developer</h2> -->
+          <h1 class="intro__hg__heading">Hey!</h1>
+          <h2 class="intro__hg__subheading">Let me introduce myself</h2>
         </hgroup>
-        <p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus and DigitasLBi on a wide variety of projects for local and global clients.</p>
-        <p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a creative front-end developer than a "regular front-end developer" who leans more against the backend part of an application. I prefer to work on a nice UI rather then tie up boring business logic.</p>
-        <p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
-        <p>I worked a lot with Sitecore developers and EpiServer developers many of the projects below are running on these platforms. I have worked less with PHP developers.</p>
-        <p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015.</p>
+<p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus, and DigitasLBi on a wide variety of projects for local and global clients.</p>
+<p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a “creative” front-end developer than a "regular" front-end developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
+<p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
+<p>
+<p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015. This is also something I have been able to use within Valtech. Besides the front-end for Beerwulf.com, I have also been allowed to do all product photography for this website.</p>
+
+<h3 class="intro__subheading">Current status</h3>
+<p>I currently work at Valtech, here I work together with several disciplines and together we maintain various platforms. We generally work Agile according to the Scrum framework.</p>
+<p>Every two weeks I organize a front-end meeting in which our front-end team can share different tools and tech and we also regularly discuss different ways of working.</p>
+<p>My latest project <a href="https://www.valtech.com" rel="external" target="_blank">Valtech.com</a> (the one that I am the most proud of) shows well what I really like to build, this is a website full of nice visual effects, this is something that I want to do more and that where I want to become better at. In recent years I have immersed myself in web animations and I am particularly interested in javascript animations. A library that I have learned is GreenSock which enables me to create high-performance HTML animations in all major browsers. Another framework I tried to learn is Vue.js although I still have to learn a lot, I have taken the first steps. The Valtech project eventually became a combination of Vanilla JS (es6), Vue.js and GreenSock.</p>
+
+<h3 class="intro__subheading">Hobbies</h3>
+<p>In addition to my full-time job as a father of two kids, I like to photograph with my Digital SLR camera and regularly play computer games on my Nintendo switch.</p>
+
       </div>
 
       <h2 class="intro__heading">Recent projects</h2>
@@ -63,7 +72,7 @@ export default {
           heading: 'Valtech Global Website',
           subheading: 'www.valtech.com',
           url: 'https://www.valtech.com',
-          methodology: 'Scrum',
+          framework: 'Scrum',
           role: 'Front-end lead',
           cms: 'EpiServer',
           details: [
@@ -84,7 +93,7 @@ export default {
           heading: 'Aegon Careers',
           subheading: 'careers.aegon.com',
           url: 'https://careers.aegon.com',
-          methodology: 'Scrum',
+          framework: 'Scrum',
           role: 'Front-end lead',
           cms: 'EpiServer',
           details: [
@@ -105,7 +114,7 @@ export default {
           heading: 'DURA-ACE',
           subheading: 'dura-ace.com',
           url: 'https://www.duraace.com',
-          methodology: 'Scrum',
+          framework: 'Scrum',
           role: 'Front-end',
           cms: 'Adobe Experience Manager',
           details: [
@@ -131,22 +140,35 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  grid-column: 5;
+  grid-column: 1;
   grid-row: 2;
-  position: relative;
-  overflow: hidden;
+  z-index: 1;
+
+  @media screen and (max-width: 1279px) {
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-column: 5;
+    grid-row: 2;
+    position: relative;
+    overflow: hidden;
+  }
 
   &__container {
     padding: 0 20px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: -17px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
+
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -17px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 
   &__inner {
@@ -156,23 +178,67 @@ export default {
   &__hg {
     font-family: var(--primary-font);
 
+    @media screen and (max-width: 1279px) {
+      color: var(--white);
+    }
+
     &__heading {
       margin: 0;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.6rem;
+
+      @media screen and (min-width: 1280px) {
+        font-size: 2rem;
+      }
     }
 
     &__subheading {
       margin: 0 0 1rem;
       font-weight: 300;
       font-size: 1rem;
+
+      @media screen and (min-width: 1280px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  p {
+    line-height: 1.6;
+
+    @media screen and (max-width: 1279px) {
+      color: var(--white);
+      font-size: 0.8rem;
     }
   }
 
   &__heading {
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: var(--primary-font);
+
+    @media screen and (max-width: 1279px) {
+      color: var(--white);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__subheading {
+    margin: 2rem 0 0;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: var(--primary-font);
+
+    @media screen and (max-width: 1279px) {
+      color: var(--white);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 1.6rem;
+    }
   }
 
   a {
