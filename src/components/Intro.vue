@@ -6,19 +6,19 @@
           <h1 class="intro__hg__heading">Hey!</h1>
           <h2 class="intro__hg__subheading">Let me introduce myself</h2>
         </hgroup>
-<p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus, and DigitasLBi on a wide variety of projects for local and global clients.</p>
-<p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a “creative” front-end developer than a "regular" front-end developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
-<p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
-<p>
-<p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015. This is also something I have been able to use within Valtech. Besides the front-end for Beerwulf.com, I have also been allowed to do all product photography for this website.</p>
+        <p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus, and DigitasLBi on a wide variety of projects for local and global clients.</p>
+        <p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a “creative” front-end developer than a "regular" front-end developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
+        <p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
+        <p>
+        <p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015. This is also something I have been able to use within Valtech. Besides the front-end for Beerwulf.com, I have also been allowed to do all product photography for this website.</p>
 
-<h3 class="intro__subheading">Current status</h3>
-<p>I currently work at Valtech, here I work together with several disciplines and together we maintain various platforms. We generally work Agile according to the Scrum framework.</p>
-<p>Every two weeks I organize a front-end meeting in which our front-end team can share different tools and tech and we also regularly discuss different ways of working.</p>
-<p>My latest project <a href="https://www.valtech.com" rel="external" target="_blank">Valtech.com</a> (the one that I am the most proud of) shows well what I really like to build, this is a website full of nice visual effects, this is something that I want to do more and that where I want to become better at. In recent years I have immersed myself in web animations and I am particularly interested in javascript animations. A library that I have learned is GreenSock which enables me to create high-performance HTML animations in all major browsers. Another framework I tried to learn is Vue.js although I still have to learn a lot, I have taken the first steps. The Valtech project eventually became a combination of Vanilla JS (es6), Vue.js and GreenSock.</p>
+        <h3 class="intro__subheading">Current status</h3>
+        <p>I currently work at Valtech, here I work together with several disciplines and together we maintain various platforms. We generally work Agile according to the Scrum framework.</p>
+        <p>Every two weeks I organize a front-end meeting in which our front-end team can share different tools and tech and we also regularly discuss different ways of working.</p>
+        <p>My latest project <a href="https://www.valtech.com" rel="external" target="_blank">Valtech.com</a> (the one that I am the most proud of) shows well what I really like to build, this is a website full of nice visual effects, this is something that I want to do more and that where I want to become better at. In recent years I have immersed myself in web animations and I am particularly interested in javascript animations. A library that I have learned is GreenSock which enables me to create high-performance HTML animations in all major browsers. Another framework I tried to learn is Vue.js although I still have to learn a lot, I have taken the first steps. The Valtech project eventually became a combination of Vanilla JS (es6), Vue.js and GreenSock.</p>
 
-<h3 class="intro__subheading">Hobbies</h3>
-<p>In addition to my full-time job as a father of two kids, I like to photograph with my Digital SLR camera and regularly play computer games on my Nintendo switch.</p>
+        <h3 class="intro__subheading">Hobbies</h3>
+        <p>In addition to my full-time job as a father of two kids, I like to photograph with my Digital SLR camera and regularly play computer games on my Nintendo switch.</p>
 
       </div>
 
@@ -49,7 +49,7 @@ export default {
         {
           heading: 'Senior - Front-end developer',
           subheading: 'Valtech',
-          employed: 'Jul 2011 – Present ▪ 7 years 4 months'
+          employed: 'Jul 2011 – Present ▪ 7 years 6 months'
         },
         {
           heading: 'Medior - Front-end developer',
@@ -62,7 +62,7 @@ export default {
           employed: 'Oct 2006 – Aug 2010 ▪ 3 years 11 months'
         },
         {
-          heading: 'Stagaire - Front-end developer',
+          heading: 'Internship - Front-end developer',
           subheading: 'ICATT interactieve media',
           employed: 'Oct 2005 – Sep 2006 ▪ 1 year'
         }
