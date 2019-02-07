@@ -7,9 +7,10 @@
           <h2 class="intro__hg__subheading">Let me introduce myself</h2>
         </hgroup>
         <p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus, and DigitasLBi on a wide variety of projects for local and global clients.</p>
-        <p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a “creative” front-end developer than a "regular" front-end developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
         <p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
-        <p>
+        <p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a UI Engineer than a Javascript developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
+        <p>I prefer to use javascript purely for presentation purposes only, therefore I find libraries like GreenSock, Anime.js great to work with, I am also a big fan of Vue.js because this framework perfectly integrates into projects and is easy to combine with other javascript libraries.</p>
+
         <p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015. This is also something I have been able to use within Valtech. Besides the front-end for Beerwulf.com, I have also been allowed to do all product photography for this website.</p>
 
         <h3 class="intro__subheading">Current status</h3>
