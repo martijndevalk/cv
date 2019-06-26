@@ -6,40 +6,65 @@
           <h1 class="intro__hg__heading">Hey!</h1>
           <h2 class="intro__hg__subheading">Let me introduce myself</h2>
         </hgroup>
-        <p>I am a creative front-end developer based in Naarden, The Netherlands with over ten years' industry experience. I have worked for multiple digital agencies like ICATT, Poort80, eFocus, and DigitasLBi on a wide variety of projects for local and global clients.</p>
-        <p>My core values are structured code, attention to detail, and an understanding of my clients' needs. I love to work with the newest technologies.</p>
-        <p>I specialize in front-end web development where my interest is more towards the creative part of this discipline. I would rather call myself a UI Engineer than a Javascript developer who leans more against the backend part of an application. I prefer to work on a nice UI rather than tie up boring business logic.</p>
-        <p>I prefer to use javascript purely for presentation purposes only, therefore I find libraries like GreenSock, Anime.js great to work with, I am also a big fan of Vue.js because this framework perfectly integrates into projects and is easy to combine with other javascript libraries.</p>
+        <p>
+          I am a creative front-end developer based in
+          <a
+            href="https://goo.gl/maps/goJXEWFRcLxnSTdW6"
+            rel="external"
+            target="_blank"
+          >Naarden</a>, The Netherlands with over ten years' industry experience.
+          I have worked for multiple digital agencies like Poort80, DigitasLBi, eFocus, and Valtech on a wide variety of projects for local and global clients.
+        </p>
+        <p>My core values are structured code, attention to detail, and an understanding of my clients' needs.</p>
+        <p>I love working and discovering new technologies such as CSS Grid level 2, scroll snapping, variable fonts, SVG animation, Vue.js, React and all the cool stuff that ES6 is bringing us.</p>
+        <p>
+          I specialize in front-end web development where my interest is more towards the creative part of this discipline.
+          I would rather call myself a UI Engineer than a Javascript developer who leans more against the backend part of an application.
+          I prefer to work on a nice UI rather than tie up boring business logic.
+        </p>
+        <p>I really like to use javascript purely for presentation purposes only, therefore I find libraries like GreenSock, Anime.js great to work with, I am also a big fan of Vue.js because this framework perfectly integrates into projects and is easy to combine with other javascript libraries.</p>
 
-        <p>Besides coding I love photography, I got my own business "<a href="http://plat-vlak.nl/" rel="external" target="_blank">plat vlak photography</a> started in 2015. This is also something I have been able to use within Valtech. Besides the front-end for Beerwulf.com, I have also been allowed to do all product photography for this website.</p>
+        <p>
+          Besides coding I love photography, I got my own small business "
+          <a
+            href="http://plat-vlak.nl/"
+            rel="external"
+            target="_blank"
+          >plat vlak photography</a> started in 2015.
+        </p>
 
         <h3 class="intro__subheading">Current status</h3>
-        <p>I currently work at Valtech, here I work together with several disciplines and together we maintain various platforms. We generally work Agile according to the Scrum framework.</p>
-        <p>Every two weeks I organize a front-end meeting in which our front-end team can share different tools and tech and we also regularly discuss different ways of working.</p>
-        <p>My latest project <a href="https://www.valtech.com" rel="external" target="_blank">Valtech.com</a> (the one that I am the most proud of) shows well what I really like to build, this is a website full of nice visual effects, this is something that I want to do more and that where I want to become better at. In recent years I have immersed myself in web animations and I am particularly interested in javascript animations. A library that I have learned is GreenSock which enables me to create high-performance HTML animations in all major browsers. Another framework I tried to learn is Vue.js although I still have to learn a lot, I have taken the first steps. The Valtech project eventually became a combination of Vanilla JS (es6), Vue.js and GreenSock.</p>
+        <p>
+          I currently work at
+          <a
+            href="https://www.deptagency.com/"
+            rel="external"
+            target="_blank"
+          >DEPT Agency</a>, here I work together with several disciplines and together we maintain various platforms.
+          We generally work Agile according to the Scrum framework.
+        </p>
 
         <h3 class="intro__subheading">Hobbies</h3>
         <p>In addition to my full-time job as a father of two kids, I like to photograph with my Digital SLR camera and regularly play computer games on my Nintendo switch.</p>
-
+        <p>I have also been discovering a new hobby lately and that is FPV drone racing.</p>
       </div>
 
       <h2 class="intro__heading">Recent projects</h2>
 
-      <Project :projects="projects" />
+      <Project :projects="projects"/>
 
       <h2 class="intro__heading">Work experience</h2>
-      <Box :boxes="boxes" />
+      <Box :boxes="boxes"/>
     </div>
   </div>
 </template>
 
 <script>
-
-import Project from '@/components/Project.vue'
-import Box from '@/components/Box.vue'
+import Project from "@/components/Project.vue";
+import Box from "@/components/Box.vue";
 
 export default {
-  name: 'Intro',
+  name: "Intro",
   components: {
     Project,
     Box
@@ -48,95 +73,124 @@ export default {
     return {
       boxes: [
         {
-          heading: 'Senior - Front-end developer',
-          subheading: 'Valtech',
-          employed: 'Jul 2011 – Present ▪ 7 years 6 months'
+          heading: "Front-end developer",
+          subheading: "DEPT Agency",
+          employed: "Apr 2011 – Present"
         },
         {
-          heading: 'Medior - Front-end developer',
-          subheading: 'LBi Lost Boys',
-          employed: 'Sep 2010 – Jun 2011 ▪ 10 months'
+          heading: "Front-end developer",
+          subheading: "Valtech",
+          employed: "Jul 2011 – Mrt 2019 ▪ 7 years 9 months"
         },
         {
-          heading: 'Junior - Front-end developer',
-          subheading: 'Poort80',
-          employed: 'Oct 2006 – Aug 2010 ▪ 3 years 11 months'
+          heading: "Front-end developer",
+          subheading: "DigitasLBi",
+          employed: "Sep 2010 – Jun 2011 ▪ 10 months"
         },
         {
-          heading: 'Internship - Front-end developer',
-          subheading: 'ICATT interactieve media',
-          employed: 'Oct 2005 – Sep 2006 ▪ 1 year'
+          heading: "Front-end developer",
+          subheading: "Poort80",
+          employed: "Oct 2006 – Aug 2010 ▪ 3 years 11 months"
+        },
+        {
+          heading: "Internship - Front-end developer",
+          subheading: "ICATT interactieve media",
+          employed: "Oct 2005 – Sep 2006 ▪ 1 year"
         }
       ],
       projects: [
         {
-          heading: 'Valtech Global Website',
-          subheading: 'www.valtech.com',
-          url: 'https://www.valtech.com',
-          framework: 'Scrum',
-          role: 'Front-end lead',
-          cms: 'EpiServer',
+          heading: "CARU Containers",
+          subheading: "www.carucontainers.com",
+          url: "https://www.carucontainers.com",
+          framework: "Scrum",
+          role: "Front-end",
+          cms: "Contentful",
           details: [
             {
-              heading: 'Javascript Frameworks & Libraries',
-              items: ['Plain JavaScript', 'Vue.js', 'GreenSock: GSAP']
+              heading: "Javascript Frameworks & Libraries",
+              items: ["Plain JavaScript", "DEPT front-end shelf", "Anime.js"]
             },
             {
-              heading: 'CSS Preprocessors & Methodology',
-              items: ['Sass', 'BEM']
+              heading: "CSS Preprocessors & Methodology",
+              items: ["Sass", "BEM"]
             },
             {
-              heading: 'Package Managers & Build tools',
-              items: ['NPM', 'Gulp']
+              heading: "Package Managers & Build tools",
+              items: ["NPM", "Gulp"]
             }
           ]
-        }, {
-          heading: 'Aegon Careers',
-          subheading: 'careers.aegon.com',
-          url: 'https://careers.aegon.com',
-          framework: 'Scrum',
-          role: 'Front-end lead',
-          cms: 'EpiServer',
+        },
+        {
+          heading: "Valtech Global Website",
+          subheading: "www.valtech.com",
+          url: "https://www.valtech.com",
+          framework: "Scrum",
+          role: "Front-end lead",
+          cms: "EpiServer",
           details: [
             {
-              heading: 'Javascript Frameworks & Libraries',
-              items: ['Plain JavaScript', 'Vue.js', 'Anime.js']
+              heading: "Javascript Frameworks & Libraries",
+              items: ["Plain JavaScript", "Vue.js", "GreenSock: GSAP"]
             },
             {
-              heading: 'CSS Preprocessors & Methodology',
-              items: ['Sass', 'BEM']
+              heading: "CSS Preprocessors & Methodology",
+              items: ["Sass", "BEM"]
             },
             {
-              heading: 'Package Managers & Build tools',
-              items: ['NPM', 'Gulp']
+              heading: "Package Managers & Build tools",
+              items: ["NPM", "Gulp"]
             }
           ]
-        }, {
-          heading: 'DURA-ACE',
-          subheading: 'dura-ace.com',
-          url: 'https://www.duraace.com',
-          framework: 'Scrum',
-          role: 'Front-end',
-          cms: 'Adobe Experience Manager',
+        },
+        {
+          heading: "Aegon Careers",
+          subheading: "careers.aegon.com",
+          url: "https://careers.aegon.com",
+          framework: "Scrum",
+          role: "Front-end lead",
+          cms: "EpiServer",
           details: [
             {
-              heading: 'Javascript Frameworks & Libraries',
-              items: ['jQuery', 'GreenSock: GSAP', 'ScrollMagic']
+              heading: "Javascript Frameworks & Libraries",
+              items: ["Plain JavaScript", "Vue.js", "Anime.js"]
             },
             {
-              heading: 'CSS Preprocessors & Methodology',
-              items: ['Sass', 'BEM']
+              heading: "CSS Preprocessors & Methodology",
+              items: ["Sass", "BEM"]
             },
             {
-              heading: 'Package Managers & Build tools',
-              items: ['NPM', 'Gulp']
+              heading: "Package Managers & Build tools",
+              items: ["NPM", "Gulp"]
+            }
+          ]
+        },
+        {
+          heading: "DURA-ACE",
+          subheading: "dura-ace.com",
+          url: "https://www.duraace.com",
+          framework: "Scrum",
+          role: "Front-end",
+          cms: "Adobe Experience Manager",
+          details: [
+            {
+              heading: "Javascript Frameworks & Libraries",
+              items: ["jQuery", "GreenSock: GSAP", "ScrollMagic"]
+            },
+            {
+              heading: "CSS Preprocessors & Methodology",
+              items: ["Sass", "BEM"]
+            },
+            {
+              heading: "Package Managers & Build tools",
+              items: ["NPM", "Gulp"]
             }
           ]
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -247,5 +301,4 @@ export default {
     text-decoration: none;
   }
 }
-
 </style>
