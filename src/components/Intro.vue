@@ -16,7 +16,7 @@
           I have worked for multiple digital agencies like Poort80, DigitasLBi, eFocus, and Valtech on a wide variety of projects for local and global clients.
         </p>
         <p>My core values are structured code, attention to detail, and an understanding of my clients' needs.</p>
-        <p>I love working and discovering new technologies such as CSS Grid level 2, scroll snapping, variable fonts, SVG animation, Vue.js, React and all the cool stuff that ES6 is bringing us.</p>
+        <p>I love working and discovering new technologies such as CSS Grid level 2, scroll snapping, variable fonts, SVG animation, Vue.js, React and all the cool stuff that ES.Next is bringing us.</p>
         <p>
           I specialize in front-end web development where my interest is more towards the creative part of this discipline.
           I would rather call myself a UI Engineer than a Javascript developer who leans more against the backend part of an application.
